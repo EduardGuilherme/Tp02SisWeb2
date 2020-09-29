@@ -15,7 +15,7 @@ namespace Tp02SisWeb2.Controllers
 
         public IActionResult Welcome(string name, int numTimes = 1)
         {
-            ViewData["Message"] = "Eae" + name;
+            ViewData["Message"] = "Message" + name;
             ViewData["NumTimes"] = numTimes;
 
             return View();

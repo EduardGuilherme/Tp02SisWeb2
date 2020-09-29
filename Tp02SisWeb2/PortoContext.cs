@@ -18,5 +18,9 @@ namespace Tp02SisWeb2.Data
          {
              dbContextOptions.UseSqlServer("Password=123456;Persist Security Info=True;User ID=sa;Initial Catalog=Containers;Data Source=DESKTOP-FACRE10");
          }
+        public PortoContext(DbContextOptions<PortoContext> options)
+            : base(options)
+        {
+        }
     }
 }
